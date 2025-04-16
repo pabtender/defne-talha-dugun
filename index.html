@@ -26,6 +26,31 @@
       font-size: 2em;
       margin-top: 20px;
     }
+
+    /* Mobil cihazlar için uyum */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+        font-size: 16px;
+        height: auto;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      #countdown {
+        font-size: 1.5em;
+      }
+    }
+
+    /* Daha küçük ekranlar (telefonlar) */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      #countdown {
+        font-size: 1.2em;
+      }
+    }
   </style>
 </head>
 <body>
