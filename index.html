@@ -10,13 +10,8 @@
       text-align: center;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #121212; /* Koyu arka plan */
-      color: #ffffff; /* Beyaz yazılar */
+      background-color: #f8f9fa; /* Açık arka plan */
+      color: #343a40; /* Yazılar için koyu renk */
     }
 
     h1 {
@@ -30,6 +25,12 @@
       font-size: 1.8em;
       color: #ffcc00; /* Altın sarısı */
       text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 40px #ffcc00; /* Glowing efekt */
+    }
+
+    img {
+      max-width: 90%; /* Görselin genişliği ekranın %90'ını geçemez */
+      height: auto; /* Oranları korur */
+      margin-top: 20px; /* Yazının altına yerleştirir */
     }
 
     /* Mobil cihazlar için uyum */
@@ -55,6 +56,7 @@
 <body>
   <h1>Defne ve Talha Düğün ❤️</h1>
   <div id="countdown">Geri sayım başlıyor...</div>
+  <img src="https://i.postimg.cc/Bntns75W/taSMfVe.png" alt="Düğün Görseli">
 
   <script>
     function updateCountdown() {
