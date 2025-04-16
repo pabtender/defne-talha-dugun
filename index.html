@@ -31,9 +31,10 @@
       max-width: 100%; /* Görselin genişliği ekranın %100'ünü geçemez */
       height: auto; /* Oranlarını korur */
       margin-top: 20px; /* Yazının altına yerleştirir */
+      display: block; /* Görseli bir blok olarak gösterir */
     }
 
-    /* Mobil cihazlar için özel uyum */
+    /* Mobil cihazlara özel uyum */
     @media (max-width: 768px) {
       h1 {
         font-size: 2em;
@@ -42,7 +43,7 @@
         font-size: 1.5em;
       }
       img {
-        max-width: 90%; /* Mobilde görsel biraz daha küçültüldü */
+        max-width: 90%; /* Mobilde genişlik ekranın %90'ına ayarlanır */
       }
     }
 
@@ -54,7 +55,8 @@
         font-size: 1.2em;
       }
       img {
-        max-width: 85%; /* Küçük ekranlarda görsel daha fazla küçültülür */
+        max-width: 85%; /* Daha küçük cihazlar için genişlik azaltılır */
+        margin-top: 15px; /* Görsel üst boşluğu azaltılır */
       }
     }
   </style>
@@ -62,7 +64,7 @@
 <body>
   <h1>Defne ve Talha Düğün ❤️</h1>
   <div id="countdown">Geri sayım başlıyor...</div>
-  <img src="https://i.postimg.cc/Bntns75W/taSMfVe.png" alt="Düğün Görseli">
+  <img src="https://drive.google.com/uc?export=view&id=1jFR7PHBOpWdEAfMqaWBxOrfjAvs_KFz4" alt="Düğün Görseli">
 
   <script>
     function updateCountdown() {
