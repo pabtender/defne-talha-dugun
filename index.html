@@ -15,30 +15,30 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #f8f9fa; /* Arka plan rengi */
-      color: #343a40;
+      background-color: #121212; /* Koyu arka plan */
+      color: #ffffff; /* Beyaz yazılar */
     }
-    img {
-      max-width: 90%; /* Görselin genişliği ekranın %90'ını geçemez */
-      height: auto; /* Oranları korur */
-      margin: 0 auto; /* Ortalar */
-    }
+
     h1 {
-      font-size: 2em;
-      margin: 20px 0;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #00ffcc; /* Neon yeşil */
+      text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc; /* Glowing efekt */
     }
+
     #countdown {
-      font-size: 1.5em;
-      margin-top: 20px;
+      font-size: 1.8em;
+      color: #ffcc00; /* Altın sarısı */
+      text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 40px #ffcc00; /* Glowing efekt */
     }
 
     /* Mobil cihazlar için uyum */
     @media (max-width: 768px) {
       h1 {
-        font-size: 1.8em;
+        font-size: 2em;
       }
       #countdown {
-        font-size: 1.2em;
+        font-size: 1.5em;
       }
     }
 
@@ -47,13 +47,12 @@
         font-size: 1.5em;
       }
       #countdown {
-        font-size: 1em;
+        font-size: 1.2em;
       }
     }
   </style>
 </head>
 <body>
-  <img src="https://i.postimg.cc/Bntns75W/taSMfVe.png" alt="Düğün Görseli">
   <h1>Defne ve Talha Düğün ❤️</h1>
   <div id="countdown">Geri sayım başlıyor...</div>
 
