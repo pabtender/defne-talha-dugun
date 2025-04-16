@@ -7,11 +7,16 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
       margin: 0;
       padding: 0;
       background-color: #ffffff; /* Beyaz arka plan */
       color: #343a40; /* Yazılar için koyu renk */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Tüm içeriği yatay ve dikey ortalar */
+      height: 100vh; /* Tam ekran yüksekliği */
+      text-align: center;
     }
 
     h1 {
@@ -25,12 +30,14 @@
       font-size: 1.8em;
       color: #8e44ad; /* Pastel mor ton */
       text-shadow: 0 0 3px #d2b4de, 0 0 5px #d2b4de; /* Hafif glowing efekt */
+      margin-bottom: 20px;
     }
 
     img {
       max-width: 100%; /* Görselin genişliği ekranın %100'ünü geçemez */
       height: auto; /* Oranlarını korur */
-      margin-top: 20px; /* Yazının altına yerleştirir */
+      display: block; /* Görseli bir blok olarak gösterir */
+      margin: 0 auto; /* Görseli yatay olarak ortalar */
     }
   </style>
 </head>
