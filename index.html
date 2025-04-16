@@ -10,30 +10,35 @@
       text-align: center;
       margin: 0;
       padding: 0;
-      background-image: url('https://i.postimg.cc/sDgV9HNB/taSMfVe.png'); /* Yeni görsel bağlantısı buraya eklendi */
-      background-size: cover; /* Görseli ekrana tam sığdırır */
-      background-repeat: no-repeat; /* Görselin tekrarlanmamasını sağlar */
-      background-position: center; /* Görseli ortalar */
-      color: #ffffff; /* Yazı rengini görsele uyumlu hale getirdik (beyaz) */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa; /* Arka plan rengi */
+      color: #343a40;
+    }
+    img {
+      max-width: 90%; /* Görselin genişliği ekranın %90'ını geçemez */
+      height: auto; /* Oranları korur */
+      margin: 0 auto; /* Ortalar */
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Yazı gölgesi eklendi */
+      font-size: 2em;
+      margin: 20px 0;
     }
     #countdown {
-      font-size: 2em;
+      font-size: 1.5em;
       margin-top: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Yazı gölgesi eklendi */
     }
 
     /* Mobil cihazlar için uyum */
     @media (max-width: 768px) {
       h1 {
-        font-size: 2em;
+        font-size: 1.8em;
       }
       #countdown {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
     }
 
@@ -42,12 +47,13 @@
         font-size: 1.5em;
       }
       #countdown {
-        font-size: 1.2em;
+        font-size: 1em;
       }
     }
   </style>
 </head>
 <body>
+  <img src="https://i.postimg.cc/Bntns75W/taSMfVe.png" alt="Düğün Görseli">
   <h1>Defne ve Talha Düğün ❤️</h1>
   <div id="countdown">Geri sayım başlıyor...</div>
 
